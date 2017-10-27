@@ -3,6 +3,10 @@
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+body{
+background-image:url(https://rahadian.github.io/assets/img/cover/bg1.png);
+}
 *{
 box-sizing:border-box;
 }
@@ -17,9 +21,11 @@ padding:8px;
 margin-top:7px;
 }
 .main{
+background-color:#ffff;
 float:left;
 width:60%;
 padding:0 20px;
+margin-top:7px;
 }
 .right{
 background-color:#e5e5e5;
@@ -33,11 +39,85 @@ text-align:center;
 .menu,.main,.right{
 width:100%;
 }
+.spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 505px;
+    height: 509px;
+    margin:-250px 0 0 -250px;
+    -webkit-animation:spin 12s linear infinite;
+    -moz-animation:spin 12s linear infinite;
+    animation:spin 12s linear infinite;
+}
+	@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+	@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+	@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.spin2 {
+    position: fixed;
+	opacity: 0.4;
+	left: 0px;
+	top: 0px;
+    width: 402px;
+    height: 405px;
+	z-index: -1;
+	margin: -200px 0px 0px -200px;
+    -webkit-animation:spin 16s linear infinite;
+    -moz-animation:spin 16s linear infinite;
+    animation:spin 16s linear infinite;
+}
+	@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+	@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+	@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.spin3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 505px;
+    height: 509px;
+    margin:-270px 0 0 -250px;
+    -webkit-animation:spin 20s linear infinite;
+    -moz-animation:spin 20s linear infinite;
+    animation:spin 20s linear infinite;
+}
+	@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+	@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+	@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.holder {
+   overflow: hidden;
+   position: absolute;
+   right: 0px;
+   bottom: 0px;
+   height: 450px;
+   width: 200px;
+}
+
+.spin1 {
+    position: fixed;
+	opacity: 0.4;
+	right: 0px;
+	bottom: 0px;
+    width: 505px;
+    height: 509px;
+	right: 1px;
+	bottom: 1px;
+	margin-right: -270px;
+	z-index: -1;
+    -webkit-animation:spin 22s linear infinite;
+    -moz-animation:spin 22s linear infinite;
+    animation:spin 22s linear infinite;
+}
+	@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+	@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+	@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 }
 </style>
 </head>
-<body style="font-family:Verdana;">
-<div style="padding:15px;text-align:center;">
+<body style="font-family:Verdana";>
+<div style="padding:5px;text-align:center;">
 <img src="https://rahadian.github.io/assets/img/cover/dashboard.png" width="550" height="125">
 </div>
 <div style="overflow:auto">
@@ -62,5 +142,6 @@ I know I'm a Novice but I keep learning it</center>
  </div>
 </div>
 <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">aryatux-2017</div>
+
 </body>
 </html>
